@@ -13,6 +13,7 @@ public class TicketMachine
 {
     // The price of a ticket from this machine.
     private Integer price;
+    private Integer status;
     // The amount of money entered by a customer so far.
     private Integer balance;
     // The total amount of money collected by this machine.
@@ -28,7 +29,7 @@ public class TicketMachine
     public TicketMachine(Integer ticketCost)
     {
         price = ticketCost;
-        balance = 0;
+        balance = 500;
         total = 0;
         ticketNumber = 0;
     }
